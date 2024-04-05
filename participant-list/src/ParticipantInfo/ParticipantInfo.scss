@@ -1,0 +1,184 @@
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 142px;
+    height: 53px;
+
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.1px;
+    text-align: center;
+    background: #4D7EF8;
+
+    position: absolute;
+    left: 40px;
+    top: 150px;
+    img {
+        padding-right: 10px;
+    }
+}
+
+.card-style-info {
+    margin: auto;
+    // display: flex;
+    // justify-content: center;
+    width: 55%;
+    border-width: 0px;
+    border-color: #C9CDD6;
+    box-shadow: 0px 0px 14px 0px #00000024;
+    border-radius: 16px;
+    letter-spacing: 0.15000000596046448px;
+    margin-top: 13px;
+    height: 70vh;
+
+    .card-title {
+        font-family: Mulish;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35.14px;
+        letter-spacing: -0.15000000596046448px;
+        text-align: left;
+        color: #626275;
+
+        display: flex;
+        // width: 100%;
+        padding-top: 2%;
+        padding-bottom: 1.25%;
+        border-bottom: 1px solid #C9CDD6;
+        margin-left: 4%;
+        margin-right: 4%;
+
+        .left {
+            margin-left: -2%;
+        }
+    }
+
+    .list-container-info::-webkit-scrollbar {
+        display: none;
+    }
+
+    .list-container-info {
+        padding-bottom: 2%;
+        overflow-y: scroll;
+        height: 56vh;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
+
+.participant-detail-info, .participant-detail-info-modal-view {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 61px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #F1F2F3;
+    cursor: pointer;
+
+    .left {
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+
+        //styleName: [outdated]/Body/Name card;
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.1px;
+        text-align: left;
+        color: #626275;
+
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        // width: 30%;
+
+        //styleName: [outdated]/Body/Name card;
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.1px;
+        text-align: left;
+        margin-right: 5%;
+        color: #052D8F;
+
+
+    }
+}
+
+.participant-detail-info-modal-view {
+    min-height: 61px;
+    height: auto;
+    cursor: default;
+    padding: 2%;
+    .left {
+        overflow: visible;
+        white-space: inherit;
+    }
+}
+
+.badge-style-info {
+    //styleName: [outdated]/Body/Display;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.1px;
+    text-align: left;
+    padding-top: 10px;
+    color: #97999B;
+    padding-left: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+@media screen and (max-width: 880px) {
+    .card-style-info {
+        .list-container-info {
+            .left {
+                // text-overflow: ellipsis;
+                // overflow: hidden;
+                // white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .back-btn {
+        top: 114px;
+        width: 100%;
+        left: 0;
+        justify-content: left;
+        border-radius: 0;
+    }
+
+    .card-style-info {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 32px;
+        height: 82vh;
+        .list-container-info {
+            height: 70vh;
+            .left, .right {
+                font-size: 18px;
+                // text-overflow: ellipsis;
+                // overflow: hidden;
+            }
+        }
+    }
+
+}
+
